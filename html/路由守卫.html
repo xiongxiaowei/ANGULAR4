@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<style type="text/css">
+		ul li{list-style: none;color:blue;}
+		ul li:hover{color: red;}
+		h3 {font-family: "华文行楷",font-size:26;color: #f60;}
+		p{color:blue;text-indent:28px;}
+	</style>
+</head>
+<body>
+<img src="../imgs/39.png">
+<h3>canActivate只有满足某个条件才能导航到指定路由</h3>
+<h3>canDeactivate只有满足某个条件才能离开此路由</h3>
+<h3>Resolve提前获取下一个路由所需要的数据</h3>
+<img src="../imgs/40.png">
+<h3>新建一个文件夹guard，再新建一个login.guard.ts的文件，用这个文件定义一个类，用这个类实现angular提供的一个接口
+    CanActivate，这个接口只有一个方法canActivate，我们需要实现这个方法，这个方法有一系列参数，我们直接忽略它
+    这个方法返回一个布尔值，angular会根据这个布尔值是true还是false决定是否让你通过
+</h3>
+<img src="../imgs/41.png">
+<img src="../imgs/42.png">
+<img src="../imgs/43.jpg">
+<h3>angular会依次校验canActivate所有的守卫，只有全部为true才让你通过
+    ，这时angular并不能实例化这个守卫，所以你还必须在providers里声明（依赖注入知识）
+</h3>
+<img src="../imgs/44.png">
+<img src="../imgs/45.jpg">
+</body>
+</html>

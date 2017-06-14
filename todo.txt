@@ -1,0 +1,31 @@
+http://www.tuicool.com/articles/VNnAnii   markdown编译原理
+http://blog.csdn.net/u011579138/article/details/53290810  js原理值得看
+http://www.zcfy.cc/article/best-javascript-frameworks-libraries-and-tools-to-use-in-2017-mdash-sitepoint-3101.html  2017最好的JavaScript框架、库和工具 — SitePoint
+http://www.tuicool.com/articles/yuERRjV 构造函数的理解
+http://www.tuicool.com/articles/qUvI7zV 异步处理方式
+http://www.tuicool.com/articles/22iuAvN 一个天气预报项目，另一个解决跨域的方法
+https://zhuanlan.zhihu.com/p/27334352 调试篇
+http://blog.csdn.net/songmaolin_csdn/article/details/52910771 fs模块，读写
+http://cnodejs.org/topic/54ce5697ef1b48510c27e0c3    todolist
+
+
+
+写个todolist
+type 路径
+echo 类容>>路径 追加
+C:\>xcopy c:\angular4.0Study d:\xw/s/e
+https://zhidao.baidu.com/question/25252328.html
+
+echo abc>c:\1.txt 
+echo abc>>c:\1.txt 
+上面第一个是覆盖写入，第二个是追加写入。写入饿内容是abc，文件为c:\1.txt
+
+
+http://blog.csdn.net/kofterry/article/details/5183110
+rmdir /s/q test 
+其中： 
+/s 是代表删除所有子目录跟其中的档案。 
+/q 是不要它在删除档案或目录时，不再问我 Yes or No 的动作。 
+要删除的目录前也可以指定路径，如： 
+rmdir /s/q d:/temp/test 
+这意思是告诉计算机，把磁盘驱动器 D 的temp资料夹里面的test资料夹中的所有东西全部删除，同时也不要再问我是否要删除。

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>angular</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="js/jquery.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,
+     maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+     <style type="text/css">
+     	/*.col-md-2{box-shadow: 5px 5px 5px #ccc;text-align: center;}*/
+     	.td:hover{background: #ccc;}
+     	.td a :hover{text-decoration: none;}
+     	p{color:blue;text-indent:28px;}
+
+     	*{ 
+scrollbar-3dlight-color:#D4D0C8; /*- 最外左 -*/
+scrollbar-highlight-color:#fff; /*- 左二 -*/
+scrollbar-face-color:#E4E4E4; /*- 面子 -*/
+scrollbar-arrow-color:#666; /*- 箭头 -*/
+scrollbar-shadow-color:#808080; /*- 右二 -*/
+scrollbar-darkshadow-color:#D7DCE0; /*- 右一 -*/
+scrollbar-base-color:#D7DCE0; /*- 基色 -*/
+scrollbar-track-color:#;/*- 滑道 -*/
+}
+     </style>
+     <script src='js/angular.js'></script>
+     <script >
+       var app=angular.module('test',[])
+       app.controller('con1',function($scope,$http){
+       	$scope.arr=["profile","路由跳转诀窍","路由基础","路由时传递数据","参数快照和参数订阅","路由重定向","子路由",
+		   "辅助路由","路由守卫","resolve守卫","依赖注入","http通讯","socket通讯"]
+       })
+     </script>
+</head>
+<body ng-app='test' ng-controller='con1'>
+<h1 class="text-center" style="color:blue; text-shadow: 5px 5px 5px #f60;">welcome to angular4.0</h1>
+<span class="time" style="position: relative;right:-53%;"></span>
+<div class="container">
+	<div class="row">
+		<div class="col-md-2">
+		    <table class="table table-hover table-condensed table-striped">
+           <tr ng-repeat="v in arr">
+           	<td class="td"><a class="animated" href="html/{{v}}.html" target="myframe">{{v}}</a></td>
+           </tr>
+           </table>
+		</div>
+		<div col-md-8>
+			<iframe src="./html/profile.html" width="70%" height="800" name="myframe" frameborder="0"></iframe>
+		</div>
+	</div>
+</div>	
+<script >
+	$(function(){
+		$('a').click(function(){
+			$('.col-md-8').addClass('rotateIn')
+		})
+		setInterval(()=>{
+          $('.time').html("现在是北京时间："+new Date().toLocaleString().split('/').join('-'))
+		},1000)
+		
+	})
+</script>	
+</body>
+</html>

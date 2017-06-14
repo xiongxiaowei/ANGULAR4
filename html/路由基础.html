@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<style type="text/css">
+		ul li{list-style: none;color:blue;}
+		ul li:hover{color: red;}
+		h3 {font-family: "华文行楷",font-size:26;color: #f60;}
+		p{text-indent: 18px;}
+	</style>
+</head>
+<body>
+<img src="../imgs/1.png" >
+<img src="../imgs/2.png">
+<ul>
+	<li>Routes:路由配置</li>
+	<li>RouterOutlet：模板占位符</li>
+    <li>Router:服务，有个navigate()方法实现导航</li>
+    <li>RouterLink:用在模板中的a标签内</li>
+</ul>
+<img src="../imgs/3.png">
+<img src="../imgs/4.png">
+<img src="../imgs/1.jpg">
+<h3>注意配置不能以slash开头</h3>
+<img src="../imgs/5.png">
+<p>routerLink为什么是个数组？因为，因为它不光接收路由路劲，还接受参数，a导航必须以
+/或者./开头</p>
+<ul>
+	<li>以/开头会去主路由中找</li>
+	<li>以./开头会去子路由的配置中去找</li>
+</ul>
+<img src="../imgs/6.png">
+<img src="../imgs/7.png">
+
+<h3>一个是通过a链接跳过去的，一个是通过后台调用navigate方法实现的</h3>
+<img src="../imgs/8.jpg">
+<h3>通配符的路由一定要放在最后，因为angular是从前往后找的，如果在通配符之前没找到，就会显示404组件</h3>
+</body>
+</html>
